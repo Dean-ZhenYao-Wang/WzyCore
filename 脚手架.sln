@@ -11,13 +11,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WzyCore.Application.Targets
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WzyCore", "WzyCore", "{5BCEA3A8-51A0-41F9-96A5-D40480F8F4A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzyCore.Environment.Shell.Data", "WzyCore.Environment.Shell.Data\WzyCore.Environment.Shell.Data.csproj", "{5086E3A3-FC5B-4969-B125-2416203D25E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WzyCore.Environment.Shell.Data", "WzyCore.Environment.Shell.Data\WzyCore.Environment.Shell.Data.csproj", "{5086E3A3-FC5B-4969-B125-2416203D25E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzyCore.Environment.Shell.Abstractions", "WzyCore.Environment.Shell.Abstractions\WzyCore.Environment.Shell.Abstractions.csproj", "{F296D354-102F-43D6-BF33-03B6D60935AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WzyCore.Environment.Shell.Abstractions", "WzyCore.Environment.Shell.Abstractions\WzyCore.Environment.Shell.Abstractions.csproj", "{F296D354-102F-43D6-BF33-03B6D60935AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzyCore.Environment.Shell", "WzyCore.Environment.Shell\WzyCore.Environment.Shell.csproj", "{6FDAE1B2-6B25-4435-A49B-D602AD05EC3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WzyCore.Environment.Shell", "WzyCore.Environment.Shell\WzyCore.Environment.Shell.csproj", "{6FDAE1B2-6B25-4435-A49B-D602AD05EC3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzyCore.Parser.Yaml", "WzyCore.Parser.Yaml\WzyCore.Parser.Yaml.csproj", "{24EA8123-1DBD-4996-8E15-B1F85DB9EC81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WzyCore.Parser.Yaml", "WzyCore.Parser.Yaml\WzyCore.Parser.Yaml.csproj", "{24EA8123-1DBD-4996-8E15-B1F85DB9EC81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3351F509-1757-4873-B20F-8837A00EFD8F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
