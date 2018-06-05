@@ -37,4 +37,10 @@ Global
 		{D0298971-4AC9-48C7-AB18-9A43F4A8801C} = {1812F55B-736F-4C76-8196-F18272F9CBFD}
 		{43811D88-DE25-47D4-BE9B-9C4F64CF9C55} = {34850168-CE1F-439A-8962-52E09192002E}
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.VersionControlPolicy = $1
+		$1.CommitMessageStyle = $2
+		$2.IncludeDirectoryPaths = True
+	EndGlobalSection
 EndGlobal
