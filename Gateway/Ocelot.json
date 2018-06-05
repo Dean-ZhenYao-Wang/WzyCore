@@ -1,0 +1,32 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 39532
+        }
+      ],
+      "UpstreamPathTemplate": "/rupeng/{url}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+      "AuthenticationProviderKey": "ChatKey",
+      "AllowedScopes": []
+    }
+  }, 
+  {
+    "DownstreamPathTemplate": "/{url}",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 20291
+      }
+    ],
+    "UpstreamPathTemplate": "/authserver/{url}",
+    "UpstreamHttpMethod": [ "Get", "Post" ]
+  } 
+ ] 
+}
