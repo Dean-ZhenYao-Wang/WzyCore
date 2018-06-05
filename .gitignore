@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/如鹏网《Net微服务》课件.pdf
+/ID4.IdServer/tempkey.rsa

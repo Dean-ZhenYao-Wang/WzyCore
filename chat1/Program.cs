@@ -19,6 +19,7 @@ namespace chat1
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+               // .UseUrls("http://127.0.0.1:39532")
                 .UseStartup<Startup>()
                 .Build();
     }
