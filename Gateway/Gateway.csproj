@@ -18,6 +18,8 @@
     <Content Remove="Ocelot.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ocelot.json" />
+    <None Include="Ocelot.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
