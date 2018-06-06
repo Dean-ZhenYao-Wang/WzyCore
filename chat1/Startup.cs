@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Consul;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -33,8 +34,29 @@ namespace chat1
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
+            string ip = Configuration["ip"];
+            var client = new ConsulClient(ConfigurationOverview);
+            var result = client.Agent.ServiceRegister(new AgentServiceRegistration()
+            {
+                ID = "chat1" + Guid.NewGuid(),
+                Name = "chat1",
+                Address = ip,
+                Port = Program.port,
+                Check = new AgentServiceCheck()
+                {
+                    DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
+                    Interval = TimeSpan.FromSeconds(10),
+                    HTTP = $"http://{ip}:{Program.port}/api/health",
+                    Timeout = TimeSpan.FromSeconds(5)
+                }
+            });
+        }
+
+        public static void ConfigurationOverview(ConsulClientConfiguration obj)
+        {
+            obj.Address = new Uri("http://127.0.0.1:8500");
+            obj.Datacenter = "dc1";
         }
     }
 }
