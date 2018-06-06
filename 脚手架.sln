@@ -2,17 +2,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "网关", "网关", "{1812F55B-736F-4C76-8196-F18272F9CBFD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{1812F55B-736F-4C76-8196-F18272F9CBFD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "服务", "服务", "{34850168-CE1F-439A-8962-52E09192002E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service", "service", "{34850168-CE1F-439A-8962-52E09192002E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "认证", "认证", "{FC620975-B7F0-486C-BAA5-3059A1F36ACA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "authentication", "authentication", "{FC620975-B7F0-486C-BAA5-3059A1F36ACA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ID4.IdServer", "ID4.IdServer\ID4.IdServer.csproj", "{B63EB757-F242-458B-83B4-7A51ED589822}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{D0298971-4AC9-48C7-AB18-9A43F4A8801C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chat1", "chat1\chat1.csproj", "{43811D88-DE25-47D4-BE9B-9C4F64CF9C55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commonality", "commonality", "{9F76BC39-5D92-4F65-9BA9-7067F0D61CAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
