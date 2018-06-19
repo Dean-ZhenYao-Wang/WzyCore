@@ -1,32 +1,37 @@
 ﻿{
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/{url}",
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/chat1/{url}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ServiceName": "chat1",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UseServiceDiscovery": true,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ChatKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 39532
+          "Host": "127.0.0.1",
+          "Port": 6008
         }
       ],
-      "UpstreamPathTemplate": "/rupeng/{url}",
-      "UpstreamHttpMethod": [ "Get" ],
-      "AuthenticationOptions": {
-      "AuthenticationProviderKey": "ChatKey",
-      "AllowedScopes": []
+      "UpstreamPathTemplate": "/LoginService/{url}",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
     }
-  }, 
-  {
-    "DownstreamPathTemplate": "/{url}",
-    "DownstreamScheme": "http",
-    "DownstreamHostAndPorts": [
-      {
-        "Host": "localhost",
-        "Port": 20291
-      }
-    ],
-    "UpstreamPathTemplate": "/authserver/{url}",
-    "UpstreamHttpMethod": [ "Get", "Post" ]
-  } 
- ] 
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Host": "127.0.0.1",
+      "Port": 8500
+    }
+  }
 }

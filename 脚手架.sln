@@ -8,15 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service", "service", "{3485
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "authentication", "authentication", "{FC620975-B7F0-486C-BAA5-3059A1F36ACA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ID4.IdServer", "ID4.IdServer\ID4.IdServer.csproj", "{B63EB757-F242-458B-83B4-7A51ED589822}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ID4.IdServer", "ID4.IdServer\ID4.IdServer.csproj", "{B63EB757-F242-458B-83B4-7A51ED589822}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{D0298971-4AC9-48C7-AB18-9A43F4A8801C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{D0298971-4AC9-48C7-AB18-9A43F4A8801C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chat1", "chat1\chat1.csproj", "{43811D88-DE25-47D4-BE9B-9C4F64CF9C55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chat1", "chat1\chat1.csproj", "{43811D88-DE25-47D4-BE9B-9C4F64CF9C55}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commonality", "commonality", "{9F76BC39-5D92-4F65-9BA9-7067F0D61CAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{6D23BDD4-5D85-4677-BAEB-3DF249F70A27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoginService", "LoginService", "{5322EE33-A195-4452-B95A-CCD914815075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginService", "LoginService\LoginService.csproj", "{0236FDCA-E59B-403C-BE1C-C1963E88209A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +44,10 @@ Global
 		{6D23BDD4-5D85-4677-BAEB-3DF249F70A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D23BDD4-5D85-4677-BAEB-3DF249F70A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D23BDD4-5D85-4677-BAEB-3DF249F70A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0236FDCA-E59B-403C-BE1C-C1963E88209A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0236FDCA-E59B-403C-BE1C-C1963E88209A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0236FDCA-E59B-403C-BE1C-C1963E88209A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0236FDCA-E59B-403C-BE1C-C1963E88209A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{D0298971-4AC9-48C7-AB18-9A43F4A8801C} = {1812F55B-736F-4C76-8196-F18272F9CBFD}
 		{43811D88-DE25-47D4-BE9B-9C4F64CF9C55} = {34850168-CE1F-439A-8962-52E09192002E}
 		{6D23BDD4-5D85-4677-BAEB-3DF249F70A27} = {9F76BC39-5D92-4F65-9BA9-7067F0D61CAD}
+		{5322EE33-A195-4452-B95A-CCD914815075} = {34850168-CE1F-439A-8962-52E09192002E}
+		{0236FDCA-E59B-403C-BE1C-C1963E88209A} = {5322EE33-A195-4452-B95A-CCD914815075}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7BA9BA4-3370-4381-A332-EF3E4906A52D}
@@ -58,5 +68,6 @@ Global
 		$0.VersionControlPolicy = $1
 		$1.CommitMessageStyle = $2
 		$2.IncludeDirectoryPaths = True
+		$2.LineAlign = 0
 	EndGlobalSection
 EndGlobal

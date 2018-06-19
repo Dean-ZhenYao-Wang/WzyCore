@@ -19,12 +19,11 @@ namespace Gateway
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://127.0.0.1:" + port)
                 .UseStartup<Startup>()
+                .UseUrls("http://127.0.0.1:" + port)
                 .ConfigureAppConfiguration((hostingContext, builder) =>
                 {
-                    builder.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath).AddJsonFile("Ocelot.json")
-                    .AddEnvironmentVariables();
+                    builder.AddJsonFile("Ocelot.json", false, true);
                 })
                 .Build();
     }
