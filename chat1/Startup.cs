@@ -25,6 +25,12 @@ namespace chat1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://localhost:9500";//identity server 地址
+                    options.RequireHttpsMetadata = false;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +40,7 @@ namespace chat1
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseAuthentication();
             app.UseMvc();
             string ip = Configuration["ip"];
             var client = new ConsulClient(ConfigurationOverview);
