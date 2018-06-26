@@ -1,6 +1,7 @@
 ﻿using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
+
 namespace ID4.IdServer
 {
     public class Config
@@ -12,10 +13,11 @@ namespace ID4.IdServer
         public static IEnumerable<ApiResource> GetApiResources()
         {
             List<ApiResource> resources = new List<ApiResource>();
-            //ApiResource第一个参数是应用的名字，第二个参数是显示名字 
+            //ApiResource第一个参数是应用的名字，第二个参数是显示名字
             resources.Add(new ApiResource("MsgAPI", "消息服务API"));
             return resources;
         }
+
         /// <summary>
         /// 返回账号列表
         /// </summary>
@@ -30,7 +32,7 @@ namespace ID4.IdServer
                 //AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets =
                 {
-                    new Secret("w.s-bp-2019".Sha256())//秘钥 
+                    new Secret("w.s-bp-2019".Sha256())//秘钥
                 },
                 AllowedScopes = {
                     "MsgAPI",

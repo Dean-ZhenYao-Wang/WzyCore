@@ -3,7 +3,6 @@ using IdentityServer4.Validation;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-
 namespace ID4.IdServer
 {
     public class ResourceOwnerPasswordValidator : IResourceOwnerPasswordValidator

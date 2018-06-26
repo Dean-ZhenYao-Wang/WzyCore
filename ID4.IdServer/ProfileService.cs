@@ -1,7 +1,8 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using IdentityServer4.Models;
+﻿using IdentityServer4.Models;
 using IdentityServer4.Services;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace ID4.IdServer
 {
     public class ProfileService : IProfileService

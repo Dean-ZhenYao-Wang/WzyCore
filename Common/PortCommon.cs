@@ -13,13 +13,13 @@ namespace Common
         /// <param name="minPort"></param>
         /// <param name="maxPort"></param>
         /// <returns></returns>
-        public static int GetRandAvailablePort(int minPort=1024,int maxPort=65535)
+        public static int GetRandAvailablePort(int minPort = 1024, int maxPort = 65535)
         {
             Random rand = new Random();
-            while(true)
+            while (true)
             {
                 int port = rand.Next(minPort, maxPort);
-                if(!IsPortInUsed(port))
+                if (!IsPortInUsed(port))
                 {
                     return port;
                 }
@@ -35,12 +35,12 @@ namespace Common
         {
             IPGlobalProperties ipGlobalProperties = IPGlobalProperties.GetIPGlobalProperties();
             IPEndPoint[] ipsTcp = ipGlobalProperties.GetActiveTcpListeners();
-            if(ipsTcp.Any(p=>p.Port==port))
+            if (ipsTcp.Any(p => p.Port == port))
             {
                 return true;
             }
             IPEndPoint[] ipsUDP = ipGlobalProperties.GetActiveUdpListeners();
-            if(ipsUDP.Any(p=>p.Port==port))
+            if (ipsUDP.Any(p => p.Port == port))
             {
                 return true;
             }

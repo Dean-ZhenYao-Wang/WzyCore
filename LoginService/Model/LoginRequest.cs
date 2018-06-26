@@ -1,5 +1,4 @@
-﻿using System;
-namespace LoginService
+﻿namespace LoginService
 {
     public class LoginRequest
     {
